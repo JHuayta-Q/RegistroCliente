@@ -9,8 +9,11 @@
     <title>Formulario de Registro</title>
 </head>
 <body>
-    <x-layouts.navigation>
-    </x-layouts.navigation>
+    <nav>
+        <x-layouts.navigation>
+        </x-layouts.navigation>
+    </nav>
+
     {{ $slot }}
 </body>
 </html>
