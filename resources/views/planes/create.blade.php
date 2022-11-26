@@ -1,5 +1,6 @@
-<x-layouts.app>
-    <h1>Creacion de Planes de Internet</h1>
+<x-layouts.app title="Crear Planes">
+    
+    <a href="{{ route('plans.index') }}" class="btn btn-outline-danger">Volver</a>
 
     <form action="{{ route('plans.store') }}" method="POST">
         @csrf
@@ -14,8 +15,7 @@
             <br>
         </div>
         <div>
-            <input type="submit" value="Guardar" class="btn btn-outline-success">
-            <a href="{{ route('plans.index') }}" class="btn btn-outline-danger">Cancelar</a>
+            <input type="submit" value="Guardar" class="btn btn-outline-primary">
         </div>
     </form>
 </x-layouts.app>
