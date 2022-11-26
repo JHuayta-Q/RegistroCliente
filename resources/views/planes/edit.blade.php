@@ -1,5 +1,4 @@
-<x-layouts.app>
-    <h1>Modificacion de Planes de Internet</h1>
+<x-layouts.app title="Modificar Planes">
 
     <form action="{{ route('plans.update', $plan->id) }}" method="POST">
         @csrf @method('PATCH')
